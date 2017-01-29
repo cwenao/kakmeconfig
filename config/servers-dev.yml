@@ -1,0 +1,21 @@
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://aa:aa@localhost:8761/eureka/
+ribbon:
+  eureka:
+    enabled: true
+
+spring:
+  redis:
+    host: localhost
+    port: 6379
+    password: 111222333444555666
+    timeout: 5000
+    pool:
+      max-idle: 8
+      min-idle: 0
+      max-active: 8
+      max-wait: -1
